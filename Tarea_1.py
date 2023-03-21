@@ -15,13 +15,13 @@ print ("2.- Pesos Colombianos")
 print ("3.- Pesos Mexicanos")
 opcion = int(input("Seleccione la opcion "))
 
-if opcion == 1 :
-    convertir_dolar(ARG,"Argentinos")
-else:
-    if opcion == 2 :
-      convertir_dolar(COL, "Colombianos")
-    else:
-       if opcion == 3 :
-        convertir_dolar(MXN, "Mexicanos")
-       else:
-           print("Ingrese un valor valido")
+
+if opcion <= 3 | opcion > 0:
+    if 1 == opcion :
+        convertir_dolar(ARG, "Argentinos")
+    elif opcion == 2 :
+           convertir_dolar(COL, "Colombianos")
+    elif opcion == 3 :
+               convertir_dolar(MXN, "Mexicanos")
+else :
+    print("Ingrese un valor valido")
